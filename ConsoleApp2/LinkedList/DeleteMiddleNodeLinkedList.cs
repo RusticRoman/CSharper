@@ -4,7 +4,6 @@ namespace ConsoleApp2;
  * Definition for singly-linked list.
  */
 
-
 public class DeleteMiddleNodeLinkedList
 {
     public ListNode? DeleteMiddle(ListNode? head) {
