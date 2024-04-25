@@ -1,6 +1,5 @@
 using System;
-
-namespace ConsoleApp2.BinaryTreeDSF;
+using ConsoleApp2.DataStructures;
 
 public class CountGoodNodesinBinaryTree
 {
