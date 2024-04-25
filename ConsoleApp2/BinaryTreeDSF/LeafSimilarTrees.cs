@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp2.BinaryTreeDSF;
+namespace ConsoleApp2.DataStructures;
 
 /**
 872. Leaf-Similar Trees
