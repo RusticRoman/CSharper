@@ -33,10 +33,8 @@ public class GreatestCommonDivisorStrings
         {
             return "";
         }
-
         return str1.Substring(0, gcd(str1.Length, str2.Length));
     }
-
     private static int gcd(int a, int b)
     {
         while (a != 0 && b != 0)
@@ -46,7 +44,6 @@ public class GreatestCommonDivisorStrings
             else
                 b = b % a;
         }
-
         return a | b;
     }
 }

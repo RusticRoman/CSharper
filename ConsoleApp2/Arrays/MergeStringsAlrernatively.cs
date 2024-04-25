@@ -54,18 +54,15 @@ public class MergeStringsAlrernatively
             result.Append(word2[i]);
             i++;
         }
-
         // Append the remainder of the longer string
         if (i < word1.Length)
         {
             result.Append(word1.Substring(i));
         }
-
         if (i < word2.Length)
         {
             result.Append(word2.Substring(i));
         }
-
         return result.ToString();
     }
 }
