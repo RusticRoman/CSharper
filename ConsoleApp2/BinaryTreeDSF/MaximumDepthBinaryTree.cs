@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp2.BinaryTreeDSF;
+namespace ConsoleApp2.DataStructures;
 
 /**
 
