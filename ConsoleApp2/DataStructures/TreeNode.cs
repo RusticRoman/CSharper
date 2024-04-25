@@ -1,4 +1,4 @@
-namespace ConsoleApp2.BinaryTreeBSF;
+namespace ConsoleApp2.DataStructures;
 
  public class TreeNode {
      public int val;
