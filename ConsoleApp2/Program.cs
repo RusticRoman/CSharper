@@ -1,5 +1,5 @@
 ﻿using System;
-using ConsoleApp2.BinaryTreeBSF;
+using ConsoleApp2.DataStructures;
 
 namespace ConsoleApp2;
 
@@ -16,6 +16,6 @@ public class Program1
         TreeNode right1 = new TreeNode(3, left3, right3);
         TreeNode root = new TreeNode(1, left1, right1);
         
-        ConsoleApp2.BinaryTreeBSF.BreadthFirstPrint b = new ConsoleApp2.BinaryTreeBSF.BreadthFirstPrint(root);
+        var b = new BreadthFirstPrint(root);
     }
 }
