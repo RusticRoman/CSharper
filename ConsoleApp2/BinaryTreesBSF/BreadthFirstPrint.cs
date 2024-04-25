@@ -1,4 +1,4 @@
-namespace ConsoleApp2.BinaryTreeBSF;
+namespace ConsoleApp2.DataStructures;
 
 public class BreadthFirstPrint
 {
@@ -14,6 +14,7 @@ public class BreadthFirstPrint
             {
                 nodes.Enqueue(n.left);
             }
+
             if (n.right != null)
             {
                 nodes.Enqueue(n.right);
