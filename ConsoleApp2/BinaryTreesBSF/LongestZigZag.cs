@@ -5,8 +5,11 @@ public class LongestZigZag
     public int LongestZigZagSolution(TreeNode? root)
     {
         if (root == null) return 0;
+        
         int a = maxZigZag(root.left, false, 1);
+        
         int b = maxZigZag(root.right, true, 1);
+        
         return Math.Max(a, b);
     }
 
