@@ -16,7 +16,9 @@ public class LongestZigZag
     public int maxZigZag(TreeNode? node, bool directionRight, int length)
     {
         if (node == null) return length-1;
+        
         int leftLength, rightLength;
+        
         // Handling the left child
         if (directionRight) {
             // If the previous direction was to the right, now go left
