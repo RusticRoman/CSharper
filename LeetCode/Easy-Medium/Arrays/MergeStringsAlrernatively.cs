@@ -1,9 +1,11 @@
+using System.Text;
+
 namespace ConsoleApp2;
 
 /**
 
     1768. Merge Strings Alternately
-    You are given two strings word1 and word2. 
+    You are given two strings word1 and word2.
     Merge the strings by adding letters in alternating order, starting with word1.
     If a string is longer than the other, append the additional letters onto the end of the merged string.
 
@@ -39,14 +41,13 @@ namespace ConsoleApp2;
     1 <= word1.length, word2.length <= 100
     word1 and word2 consist of lowercase English letters.
  */
-using System.Text;
 
 public class MergeStringsAlrernatively
 {
     public string MergeAlternately(string word1, string word2)
     {
-        StringBuilder result = new StringBuilder();
-        int i = 0;
+        var result = new StringBuilder();
+        var i = 0;
         // Merge characters alternately
         while (i < word1.Length && i < word2.Length)
         {
@@ -54,15 +55,10 @@ public class MergeStringsAlrernatively
             result.Append(word2[i]);
             i++;
         }
+
         // Append the remainder of the longer string
-        if (i < word1.Length)
-        {
-            result.Append(word1.Substring(i));
-        }
-        if (i < word2.Length)
-        {
-            result.Append(word2.Substring(i));
-        }
+        if (i < word1.Length) result.Append(word1.Substring(i));
+        if (i < word2.Length) result.Append(word2.Substring(i));
         return result.ToString();
     }
 }

@@ -4,13 +4,12 @@ public class CanPlaceFlowers
 {
     public bool CanPlaceFlowersSolution(int[] flowerbed, int n)
     {
-        int length = flowerbed.Length;
-        for (int i = 0; i < length && n > 0; i++)
-        {
+        var length = flowerbed.Length;
+        for (var i = 0; i < length && n > 0; i++)
             if (flowerbed[i] == 0)
             {
-                bool left = (i == 0 || flowerbed[i - 1] == 0);
-                bool right = (i == length - 1 || flowerbed[i + 1] == 0);
+                var left = i == 0 || flowerbed[i - 1] == 0;
+                var right = i == length - 1 || flowerbed[i + 1] == 0;
 
                 if (left && right)
                 {
@@ -18,7 +17,7 @@ public class CanPlaceFlowers
                     n--;
                 }
             }
-        }
+
         return n == 0;
     }
 }
